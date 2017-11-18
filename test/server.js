@@ -22,4 +22,16 @@ describe('package.land', () => {
     res.statusCode.should.equal(302)
     res.headers.location.should.equal('https://npmjs.com/package/not-gonna-be-a-package-name')
   })
+
+  it('should not fetch native methods', async () => {
+    const res = await supertest(app).get(`/__defineGetter__`)
+    res.statusCode.should.equal(302)
+    res.headers.location.should.equal('https://npmjs.com/package/__defineGetter__')
+  })
+
+  it('should redirect properly if a package with the native function exsists', async () => {
+    const res = await supertest(app).get(`/toString`)
+    res.statusCode.should.equal(302)
+    res.headers.location.should.equal('https://github.com/uxnow/toString')
+  })
 })
