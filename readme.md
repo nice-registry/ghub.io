@@ -19,6 +19,8 @@ This link redirects to npm, because no GitHub repo will be found for the given p
 
 - [package.land/some-nonexistent-package](https://package.land/some-nonexistent-package)
 
+If you want to have the same behavior but over npm world, you can use npm.im redirect, like [npm.im/express](https://npm.im/express).
+
 ## Dependencies
 
 - [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos): All the repository URLs in the npm registry as an object whose keys are package names and values are URLs
