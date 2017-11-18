@@ -1,6 +1,7 @@
 const express = require('express')
 const port = Number(process.env.PORT) || 5000
-const repos = require('all-the-package-repos')
+const obj2map = obj => Object.keys(obj).reduce((m, k) => m.set(k, obj[k]), new Map())
+const repos = obj2map(require('all-the-package-repos'))
 const app = express()
 
 app.get('/', (req, res, next) => {
@@ -9,7 +10,7 @@ app.get('/', (req, res, next) => {
 
 app.get('/:name', (req, res, next) => {
   const name = req.params.name
-  const repo = repos[name] || `https://npmjs.com/package/${name}`
+  const repo = repos.get(name) || `https://npmjs.com/package/${name}`
   res.redirect(repo)
 })
 
