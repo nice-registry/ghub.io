@@ -2,8 +2,6 @@
 
 # package.land
 
-> **Note**: You can get similar behavior over npm using [npm.im/express](https://npm.im/express) alias.
-
 Redirect to an npm package's GitHub page, if available.
 
 Functionally equivalent to the wonderful [ghub.io](http://ghub.io), 
@@ -20,6 +18,8 @@ These links will take you to each package's GitHub repo:
 This link redirects to npm, because no GitHub repo will be found for the given package name:
 
 - [package.land/some-nonexistent-package](https://package.land/some-nonexistent-package)
+
+If you want to have the same behavior but over npm world, you can use npm.im redirect, like [npm.im/express](https://npm.im/express).
 
 ## Dependencies
 
