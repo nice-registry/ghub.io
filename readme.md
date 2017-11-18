@@ -2,6 +2,8 @@
 
 # package.land
 
+> **Note**: You can get similar behavior over npm using [npm.im/express](https://npm.im/express) alias.
+
 Redirect to an npm package's GitHub page, if available.
 
 Functionally equivalent to the wonderful [ghub.io](http://ghub.io), 
