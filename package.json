@@ -1,0 +1,24 @@
+{
+  "name": "package.land",
+  "version": "1.0.0",
+  "description": "A nice place for JavaScript packages",
+  "main": "index.js",
+  "repository": "https://github.com/nice-registry/package.land",
+  "author": "zeke",
+  "license": "MIT",
+  "dependencies": {
+    "all-the-package-repos": "^1.2.1",
+    "express": "^4.16.2"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha && standard --fix && standard-markdown"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "standard": "^10.0.3",
+    "standard-markdown": "^4.0.2",
+    "supertest": "^3.0.0"
+  }
+}
