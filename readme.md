@@ -30,12 +30,17 @@ ghub choo chai chalk
 ## Dependencies
 
 - [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos): All the repository URLs in the npm registry as an object whose keys are package names and values are URLs
+- [clean-deep](https://github.com/nunofgs/clean-deep): Remove falsy, empty or nullable values from objects
+- [dedent](https://github.com/dmnd/dedent): An ES6 string tag that strips indentation from multi-line strings
 - [express](https://github.com/expressjs/express): Fast, unopinionated, minimalist web framework
+- [lil-env-thing](https://github.com/zeke/lil-env-thing): A tiny convenience module for managing process.env.NODE_ENV
+- [open](https://github.com/pwnall/node-open): open a file or url in the user&#39;s preferred application
 
 ## Dev Dependencies
 
 - [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
+- [nodemon](https://github.com/remy/nodemon): Simple monitor script for use during development of a node.js app.
 - [standard](https://github.com/standard/standard): JavaScript Standard Style
 - [standard-markdown](https://github.com/zeke/standard-markdown): Test your Markdown files for Standard JavaScript Style™
 - [supertest](https://github.com/visionmedia/supertest): SuperAgent driven library for testing HTTP servers
