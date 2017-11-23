@@ -2,7 +2,7 @@
 
 Redirect to an npm package's GitHub page, if available.
 
-## Usage
+## Web Usage
 
 These links will take you to each package's GitHub repo:
 
@@ -16,6 +16,16 @@ This link redirects to npm, because no GitHub repo will be found for the given p
 
 If you're looking for a quick way to get to an npm package page, use npm's 
 shorter `npm.im` domain, like [npm.im/express](https://npm.im/express).
+
+## CLI Usage
+
+`ghub` is also available as a command-line tool which accepts one or many
+package names and opens their GitHub repos in your web browser:
+
+```sh
+npm i -g ghub
+ghub choo chai chalk
+```
 
 ## Dependencies
 
