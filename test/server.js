@@ -4,11 +4,11 @@ const chai = require('chai')
 chai.should()
 const app = require('../server.js')
 
-describe('package.land', () => {
+describe('ghub.io', () => {
   it('redirects root path to repo readme', async () => {
     const res = await supertest(app).get(`/`)
     res.statusCode.should.equal(302)
-    res.headers.location.should.equal('https://github.com/nice-registry/package.land#readme')
+    res.headers.location.should.equal('https://github.com/nice-registry/ghub.io#readme')
   })
 
   it('redirects known package names to GitHub', async () => {
