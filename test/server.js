@@ -29,7 +29,7 @@ describe('package.land', () => {
     res.headers.location.should.equal('https://npmjs.com/package/__defineGetter__')
   })
 
-  it('should redirect properly if a package with the native function exsists', async () => {
+  it('should redirect properly if a package with the native function exists', async () => {
     const res = await supertest(app).get(`/toString`)
     res.statusCode.should.equal(302)
     res.headers.location.should.equal('https://github.com/uxnow/toString')
