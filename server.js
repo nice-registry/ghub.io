@@ -14,6 +14,11 @@ app.get('/:name', (req, res, next) => {
   res.redirect(getRepo(req.params.name))
 })
 
+app.get('/:scope/:project', (req, res, next) => {
+  const name = [req.params.scope, req.params.project].join('/')
+  res.redirect(getRepo(name))
+})
+
 if (!module.parent) {
   app.listen(port, () => {
     console.log(`app running on ${port}`)

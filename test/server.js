@@ -17,6 +17,12 @@ describe('ghub.io', () => {
     res.headers.location.should.equal('https://github.com/expressjs/express')
   })
 
+  it('supports scoped package names', async () => {
+    const res = await supertest(app).get(`/@angular/core`)
+    res.statusCode.should.equal(302)
+    res.headers.location.should.equal('https://github.com/angular/angular')
+  })
+
   it('redirects unknown package names to npm', async () => {
     const res = await supertest(app).get(`/not-gonna-be-a-package-name`)
     res.statusCode.should.equal(302)
