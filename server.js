@@ -7,7 +7,7 @@ const app = express()
 app.use('/:name', logger)
 
 app.get('/', (req, res, next) => {
-  res.redirect('https://github.com/nice-registry/package.land#readme')
+  res.redirect('https://github.com/nice-registry/ghub.io#readme')
 })
 
 app.get('/:name', (req, res, next) => {

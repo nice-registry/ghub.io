@@ -1,25 +1,21 @@
-✨🍃🌳 📦 🌳🍃✨
-
-# package.land
+# 📦 ghub.io
 
 Redirect to an npm package's GitHub page, if available.
 
-Functionally equivalent to the wonderful [ghub.io](http://ghub.io), 
-but smaller, faster and more up to date.
-
-## Examples
+## Usage
 
 These links will take you to each package's GitHub repo:
 
-- [package.land/express](https://package.land/express)
-- [package.land/choo](https://package.land/choo)
-- [package.land/puppeteer](https://package.land/puppeteer)
+- [ghub.io/express](https://ghub.io/express)
+- [ghub.io/choo](https://ghub.io/choo)
+- [ghub.io/puppeteer](https://ghub.io/puppeteer)
 
 This link redirects to npm, because no GitHub repo will be found for the given package name:
 
-- [package.land/some-nonexistent-package](https://package.land/some-nonexistent-package)
+- [ghub.io/some-nonexistent-package](https://ghub.io/some-nonexistent-package)
 
-If you want to have the same behavior but over npm world, you can use npm.im redirect, like [npm.im/express](https://npm.im/express).
+If you're looking for a quick way to get to an npm package page, use npm's 
+shorter `npm.im` domain, like [npm.im/express](https://npm.im/express).
 
 ## Dependencies
 

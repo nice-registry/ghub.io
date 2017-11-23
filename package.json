@@ -1,9 +1,9 @@
 {
-  "name": "package.land",
+  "name": "ghub.io",
   "private": true,
   "description": "A nice place for JavaScript packages",
   "main": "server.js",
-  "repository": "https://github.com/nice-registry/package.land",
+  "repository": "https://github.com/nice-registry/ghub.io",
   "author": "zeke",
   "license": "MIT",
   "scripts": {
