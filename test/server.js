@@ -17,6 +17,18 @@ describe('ghub.io', () => {
     res.headers.location.should.equal('https://github.com/expressjs/express')
   })
 
+  it('redirects to a scoped package github page', async () => {
+    const res = await supertest(app).get('/scoped/andregarvin?name=spark')
+    res.statusCode.should.equal(302)
+    res.headers.location.should.equal('https://github.com/andregarvin/spark')
+  })
+
+  it('should redirect to the scoped route if it is a scoped name', async () => {
+    const res = await supertest(app).get('/@request?name=cli')
+    res.statusCode.should.equal(302)
+    res.headers.location.should.equal('/scoped/request?name=cli')
+  })
+
   it('redirects unknown package names to npm', async () => {
     const res = await supertest(app).get(`/not-gonna-be-a-package-name`)
     res.statusCode.should.equal(302)
