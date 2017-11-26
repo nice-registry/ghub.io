@@ -1,5 +1,7 @@
 # 📦 ghub.io
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/nice-registry/ghub.io.svg)](https://greenkeeper.io/)
+
 Redirect to an npm package's GitHub page, if available.
 
 ## Usage
