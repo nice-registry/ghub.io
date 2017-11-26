@@ -27,6 +27,15 @@ npm i -g ghub
 ghub choo chai chalk
 ```
 
+The CLI can also read from newline-delimited standard input. Here's an example
+that opens the repos of the top ten most-dependend-on packages whose names 
+start with `level`:
+
+```sh
+npm i -g ghub all-the-package-names
+all-the-package-names | egrep '^level' | head -n 10 | ghub
+```
+
 ## Dependencies
 
 - [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos): All the repository URLs in the npm registry as an object whose keys are package names and values are URLs
