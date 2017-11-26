@@ -12,7 +12,7 @@
     "dev": "nodemon"
   },
   "dependencies": {
-    "all-the-package-repos": "^1.2.1",
+    "all-the-package-repos": "^1.4.1",
     "clean-deep": "^3.0.2",
     "express": "^4.16.2",
     "lil-env-thing": "^1.0.0"
