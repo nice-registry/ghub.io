@@ -1,20 +1,40 @@
 # 📦 ghub.io
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/nice-registry/ghub.io.svg)](https://greenkeeper.io/)
+> Redirect to an npm package's repository page, like [ghub.io/express](http://ghub.io/express)
 
-Redirect to an npm package's GitHub page, if available.
+## Features
+
+💙 Platform agnostic: supports GitHub, Gitlab, BitBucket, and [others](https://github.com/nice-registry/all-the-package-repos/pull/6).  
+
+🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](http://ghub.io/all-the-package-repos)  
+
+🔒 HTTPS support
+
+🌴 Always fresh with [Greenkeeper](https://greenkeeper.io/)  
+
+👫 [Shared ownership](https://github.com/nice-registry/about#readme) in a GitHub org  
+
+🙌 [Open Open Source](https://github.com/nice-registry/about#contributing) contribution model  
 
 ## Web Usage
 
 These links will take you to each package's GitHub repo:
 
-- [ghub.io/express](https://ghub.io/express)
-- [ghub.io/choo](https://ghub.io/choo)
-- [ghub.io/puppeteer](https://ghub.io/puppeteer)
+- [ghub.io/electron](http://ghub.io/electron)
+- [ghub.io/choo](http://ghub.io/choo)
+- [ghub.io/puppeteer](http://ghub.io/puppeteer)
 
-This link redirects to npm, because no GitHub repo will be found for the given package name:
+Works for GitLab too:
 
-- [ghub.io/some-nonexistent-package](https://ghub.io/some-nonexistent-package)
+- [ghub.io/jsonschema-extra](http://ghub.io/jsonschema-extra)
+
+And BitBucket:
+
+- [ghub.io/pickles](http://ghub.io/pickles)
+
+When the package has no specified repo, you'll be redirected to npm:
+
+- [ghub.io/some-nonexistent-package](http://ghub.io/some-nonexistent-package)
 
 If you're looking for a quick way to get to an npm package page, use npm's 
 shorter `npm.im` domain, like [npm.im/express](https://npm.im/express).
@@ -37,24 +57,6 @@ start with `level`:
 npm i -g ghub all-the-package-names
 all-the-package-names | egrep '^level' | head -n 10 | ghub
 ```
-
-## Dependencies
-
-- [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos): All the repository URLs in the npm registry as an object whose keys are package names and values are URLs
-- [clean-deep](https://github.com/nunofgs/clean-deep): Remove falsy, empty or nullable values from objects
-- [dedent](https://github.com/dmnd/dedent): An ES6 string tag that strips indentation from multi-line strings
-- [express](https://github.com/expressjs/express): Fast, unopinionated, minimalist web framework
-- [lil-env-thing](https://github.com/zeke/lil-env-thing): A tiny convenience module for managing process.env.NODE_ENV
-- [open](https://github.com/pwnall/node-open): open a file or url in the user&#39;s preferred application
-
-## Dev Dependencies
-
-- [chai](https://github.com/chaijs/chai): BDD/TDD assertion library for node.js and the browser. Test framework agnostic.
-- [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
-- [nodemon](https://github.com/remy/nodemon): Simple monitor script for use during development of a node.js app.
-- [standard](https://github.com/standard/standard): JavaScript Standard Style
-- [standard-markdown](https://github.com/zeke/standard-markdown): Test your Markdown files for Standard JavaScript Style™
-- [supertest](https://github.com/visionmedia/supertest): SuperAgent driven library for testing HTTP servers
 
 ## License
 
