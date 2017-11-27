@@ -1,5 +1,5 @@
 {
-  "name": "ghub.io",
+  "name": "ghub",
   "version": "2.0.0",
   "description": "A nice place for JavaScript packages",
   "main": "server.js",
