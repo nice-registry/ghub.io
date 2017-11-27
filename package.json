@@ -14,8 +14,10 @@
   "dependencies": {
     "all-the-package-repos": "^1.4.1",
     "clean-deep": "^3.0.2",
+    "dedent": "^0.7.0",
     "express": "^4.16.2",
-    "lil-env-thing": "^1.0.0"
+    "lil-env-thing": "^1.0.0",
+    "open": "^0.0.5"
   },
   "devDependencies": {
     "chai": "^4.1.2",
@@ -27,5 +29,6 @@
   },
   "engines": {
     "node": 8
-  }
+  },
+  "bin": "cli.js"
 }
