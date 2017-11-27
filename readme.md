@@ -49,9 +49,23 @@ npm i -g ghub
 ghub choo chai chalk
 ```
 
-The CLI can also read from newline-delimited standard input. Here's an example
-that opens the repos of the top ten most-dependend-on packages whose names 
-start with `level`:
+The CLI can also read from newline-delimited standard input.
+
+To open a repo tab for every dependency in a local package.json file:
+
+```sh
+npm i -g ghub json
+cat package.json | json dependencies | json -ka | ghub
+```
+
+or every `devDependency`:
+
+```sh
+npm i -g ghub json
+cat package.json | json devDependencies | json -ka | ghub
+```
+
+View the top ten most-dependend-on packages whose names start with `level`:
 
 ```sh
 npm i -g ghub all-the-package-names
