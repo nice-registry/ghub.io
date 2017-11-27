@@ -1,6 +1,6 @@
 {
   "name": "ghub",
-  "version": "2.0.0",
+  "version": "0.0.0-development",
   "description": "A nice place for JavaScript packages",
   "main": "server.js",
   "repository": "https://github.com/nice-registry/ghub.io",
@@ -9,7 +9,8 @@
   "scripts": {
     "start": "node server.js",
     "test": "NODE_ENV=test mocha && standard --fix && standard-markdown",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
     "all-the-package-repos": "^1.4.1",
@@ -25,7 +26,8 @@
     "nodemon": "^1.12.1",
     "standard": "^10.0.3",
     "standard-markdown": "^4.0.2",
-    "supertest": "^3.0.0"
+    "supertest": "^3.0.0",
+    "semantic-release": "^8.2.0"
   },
   "engines": {
     "node": 8
