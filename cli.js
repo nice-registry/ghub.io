@@ -27,6 +27,3 @@ if (process.stdin.isTTY) {
     terminal: false
   }).on('line', (line) => open(getRepo(line)))
 }
-
-
-
