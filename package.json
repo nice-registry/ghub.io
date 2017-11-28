@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "test": "NODE_ENV=test mocha && standard --fix && standard-markdown",
-    "dev": "nodemon",
+    "dev": "nodemon -e js,md,json",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "dependencies": {
@@ -17,17 +17,20 @@
     "clean-deep": "^3.0.2",
     "dedent": "^0.7.0",
     "express": "^4.16.2",
+    "github-markdown-css": "^2.9.0",
+    "hubdown": "^1.1.0",
     "lil-env-thing": "^1.0.0",
     "open": "^0.0.5"
   },
   "devDependencies": {
     "chai": "^4.1.2",
+    "cheerio": "^1.0.0-rc.2",
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
+    "semantic-release": "^8.2.0",
     "standard": "^10.0.3",
     "standard-markdown": "^4.0.2",
-    "supertest": "^3.0.0",
-    "semantic-release": "^8.2.0"
+    "supertest": "^3.0.0"
   },
   "engines": {
     "node": 8

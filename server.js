@@ -2,13 +2,14 @@ const express = require('express')
 const port = Number(process.env.PORT) || 5000
 const getRepo = require('./lib/get-repo')
 const logger = require('./lib/logger')
+const home = require('./lib/home')
+
 const app = express()
 
 app.use('/:name', logger)
+app.use(express.static(__dirname))
 
-app.get('/', (req, res, next) => {
-  res.redirect('https://github.com/nice-registry/ghub.io#readme')
-})
+app.get('/', home)
 
 app.get('/:name', (req, res, next) => {
   res.redirect(getRepo(req.params.name))

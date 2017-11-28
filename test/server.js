@@ -1,14 +1,21 @@
+require('chai').should()
 const {describe, it} = require('mocha')
 const supertest = require('supertest')
-const chai = require('chai')
-chai.should()
+const cheerio = require('cheerio')
 const app = require('../server.js')
 
 describe('ghub.io', () => {
-  it('redirects root path to repo readme', async () => {
+  it('has a homepage', async () => {
     const res = await supertest(app).get(`/`)
-    res.statusCode.should.equal(302)
-    res.headers.location.should.equal('https://github.com/nice-registry/ghub.io#readme')
+    res.statusCode.should.equal(200)
+    const $ = cheerio.load(res.text)
+    $('h1 a').length.should.equal(1)
+
+    const titles = $('h2')
+      .map((i, el) => $(el).text())
+      .get()
+
+    titles.length.should.be.above(3)
   })
 
   it('redirects known package names to GitHub', async () => {
