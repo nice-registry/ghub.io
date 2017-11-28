@@ -55,6 +55,14 @@ npm i -g ghub json
 cat package.json | json devDependencies | json -ka | ghub
 ```
 
+Pair `ghub` with the [`depnames`](https://github.com/nice-registry/depnames)
+CLI to open repo pages for all the dependencies of a given package:
+
+```
+npm i -g ghub depnames
+depnames chokidar | ghub
+```
+
 View the top ten most-dependend-on packages whose names start with `level`:
 
 ```sh
