@@ -1,24 +1,36 @@
 const express = require('express')
 const port = Number(process.env.PORT) || 5000
+const env = require('lil-env-thing')
+const cleanDeep = require('clean-deep')
 const getRepo = require('./lib/get-repo')
-const logger = require('./lib/logger')
-const home = require('./lib/home')
 
 const app = express()
 
-app.use('/:name', logger)
+// Middleware
 app.use(express.static(__dirname))
+app.get('/', require('./lib/home'))
+app.get('/*', redirectToRepo)
 
-app.get('/', home)
+function redirectToRepo (req, res, next) {
+  if (req.path === '/favicon.ico') return next()
 
-app.get('/:name', (req, res, next) => {
-  res.redirect(getRepo(req.params.name))
-})
+  const packageName = req.path.replace(/^\//, '')
 
-app.get('/:scope/:project', (req, res, next) => {
-  const name = [req.params.scope, req.params.project].join('/')
-  res.redirect(getRepo(name))
-})
+  const data = cleanDeep({
+    name: packageName,
+    domain: req.domain,
+    ip: req.ip,
+    headers: req.headers,
+    date: new Date()
+  })
+
+  // don't pollute test and dev output
+  if (env.production) {
+    console.log(`query: ${JSON.stringify(data)}`)
+  }
+
+  res.redirect(getRepo(packageName))
+}
 
 if (!module.parent) {
   app.listen(port, () => {

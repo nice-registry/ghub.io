@@ -1,12 +1,12 @@
 # ghub.io
 
-Redirect to an npm package's repository page, e.g. [ghub.io/express](http://ghub.io/express)
+Redirect to an npm package's repository page, like [ghub.io/express](https://ghub.io/express)
 
 ## Features
 
 🌏 Supports GitHub, Gitlab, BitBucket, and [others](https://github.com/nice-registry/all-the-package-repos/pull/6).  
 
-🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](http://ghub.io/all-the-package-repos)  
+🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](https://ghub.io/all-the-package-repos)  
 
 🔒 HTTPS support
 
@@ -24,10 +24,10 @@ specified repo you'll be redirected to npmjs.com.
 
 Examples:
 
-- [ghub.io/electron](http://ghub.io/electron) (GitHub)
-- [ghub.io/jsonschema-extra](http://ghub.io/jsonschema-extra) (GitLab)
-- [ghub.io/pickles](http://ghub.io/pickles) (BitBucket)
-- [ghub.io/some-nonexistent-package](http://ghub.io/some-nonexistent-package) (npm)
+- [ghub.io/electron](https://ghub.io/electron) (GitHub)
+- [ghub.io/jsonschema-extra](https://ghub.io/jsonschema-extra) (GitLab)
+- [ghub.io/pickles](https://ghub.io/pickles) (BitBucket)
+- [ghub.io/some-nonexistent-package](https://ghub.io/some-nonexistent-package) (npm)
 
 ## CLI Usage
 
