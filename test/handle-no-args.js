@@ -16,8 +16,9 @@ describe('No Args', () => {
         return 'someInvalidPath'
       }
     }
+    const mockConsole = { log () {} }
 
       // check if null
-    should.not.exist(handleNoArgs(mockProcess))
+    should.not.exist(handleNoArgs(mockProcess, mockConsole))
   })
 })
