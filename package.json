@@ -27,7 +27,7 @@
     "cheerio": "^1.0.0-rc.2",
     "mocha": "^5.0.0",
     "nodemon": "^1.12.1",
-    "semantic-release": "^12.2.4",
+    "semantic-release": "^15.0.0",
     "standard": "^11.0.0",
     "standard-markdown": "^4.0.2",
     "supertest": "^3.0.0"
