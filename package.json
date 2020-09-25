@@ -30,7 +30,7 @@
     "semantic-release": "^17.0.1",
     "standard": "^14.0.0",
     "standard-markdown": "^5.0.0",
-    "supertest": "^4.0.2"
+    "supertest": "^5.0.0"
   },
   "engines": {
     "node": 8
