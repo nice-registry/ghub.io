@@ -28,7 +28,7 @@
     "mocha": "^7.0.0",
     "nodemon": "^2.0.0",
     "semantic-release": "^17.0.1",
-    "standard": "^14.0.0",
+    "standard": "^15.0.0",
     "standard-markdown": "^5.0.0",
     "supertest": "^5.0.0"
   },
