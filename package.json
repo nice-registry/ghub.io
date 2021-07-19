@@ -13,7 +13,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "all-the-package-repos": "1.357.1356",
+    "all-the-package-repos": "1.357.1457",
     "clean-deep": "^3.0.2",
     "dedent": "^0.7.0",
     "express": "^4.16.2",
