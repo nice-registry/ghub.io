@@ -10,7 +10,7 @@ Redirect to an npm package's repository page, like [ghub.io/express](https://ghu
 
 🔒 HTTPS support
 
-🌴 Always fresh with [Greenkeeper](https://greenkeeper.io/)  
+🌴 Always fresh with [Dependabot](https://docs.github.com/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates)  
 
 👫 [Shared ownership](https://github.com/nice-registry/about#readme) in a GitHub org  
 
