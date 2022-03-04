@@ -6,15 +6,15 @@ Redirect to an npm package's repository page, like [ghub.io/express](https://ghu
 
 🌏 Supports GitHub, Gitlab, BitBucket, and [others](https://github.com/nice-registry/all-the-package-repos/pull/6).  
 
-🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](https://ghub.io/all-the-package-repos)  
+🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos)  
 
 🔒 HTTPS support
 
-🌴 Always fresh with [Greenkeeper](https://greenkeeper.io/)  
+🌴 Always fresh with [Dependabot](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/configuring-dependabot-security-updates)  
 
-👫 [Shared ownership](https://github.com/nice-registry/about#readme) in a GitHub org  
+👫 [Shared ownership](https://github.com/nice-registry/welcome#readme) in a GitHub org  
 
-🙌 [Open Open Source](https://github.com/nice-registry/about#contributing) contribution model  
+🙌 [Open Open Source](https://github.com/nice-registry/welcome#contributing) contribution model  
 
 ## Web Usage
 
