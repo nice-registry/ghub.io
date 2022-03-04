@@ -33,13 +33,13 @@ describe('ghub.io', () => {
   it('redirects unknown package names to npm', async () => {
     const res = await supertest(app).get(`/not-gonna-be-a-package-name`)
     res.statusCode.should.equal(302)
-    res.headers.location.should.equal('https://npmjs.com/package/not-gonna-be-a-package-name')
+    res.headers.location.should.equal('https://www.npmjs.com/package/not-gonna-be-a-package-name')
   })
 
   it('should not fetch native methods', async () => {
     const res = await supertest(app).get(`/__defineGetter__`)
     res.statusCode.should.equal(302)
-    res.headers.location.should.equal('https://npmjs.com/package/__defineGetter__')
+    res.headers.location.should.equal('https://www.npmjs.com/package/__defineGetter__')
   })
 
   it('should redirect properly if a package with the native function exists', async () => {
