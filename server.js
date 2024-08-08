@@ -1,5 +1,5 @@
 const express = require('express')
-const port = Number(process.env.PORT) || 5000
+const port = Number(process.env.PORT) || 5001
 const env = require('lil-env-thing')
 const cleanDeep = require('clean-deep')
 const getRepo = require('./lib/get-repo')
