@@ -10,7 +10,10 @@
     "start": "node server.js",
     "test": "NODE_ENV=test mocha && standard --fix && standard-markdown",
     "dev": "nodemon -e js,md,json",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "worker:dev": "npx wrangler dev",
+    "worker:deploy": "npx wrangler deploy",
+    "worker:tail": "npx wrangler tail"
   },
   "dependencies": {
     "all-the-package-repos": "^2.0.1786",
@@ -18,6 +21,7 @@
     "dedent": "^0.7.0",
     "express": "^4.16.2",
     "github-markdown-css": "^4.0.0",
+    "github-url-to-object": "^4.0.6",
     "hubdown": "^2.0.0",
     "lil-env-thing": "^1.0.0",
     "open": "^8.0.1"
@@ -30,7 +34,8 @@
     "semantic-release": "^17.0.1",
     "standard": "^16.0.0",
     "standard-markdown": "^6.0.0",
-    "supertest": "^6.0.0"
+    "supertest": "^6.0.0",
+    "wrangler": "^4.38.0"
   },
   "engines": {
     "node": "20"
