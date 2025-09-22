@@ -6,7 +6,7 @@ Redirect to an npm package's repository page, like [ghub.io/express](https://ghu
 
 🌏 Supports GitHub, Gitlab, BitBucket, and [others](https://github.com/nice-registry/all-the-package-repos/pull/6).  
 
-🚀 [Stateless design](https://12factor.net/processes) using [all-the-package-repos](https://github.com/nice-registry/all-the-package-repos)  
+🚀 Uses metadata from [UNPKG](https://unpkg.com/)  
 
 🔒 HTTPS support
 
